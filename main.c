@@ -2,5 +2,5 @@
 
 int main()
 {
-	printf("Hello Team!\n");
+	printf("Hello Sim!\n");
 }
