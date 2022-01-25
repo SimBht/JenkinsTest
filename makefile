@@ -9,7 +9,7 @@ target:
 	gcc main.c -o Target
 
 test:
-	gcc test.c $(LDLIBS_CMOCKA) -o test
+	gcc test.c $(LDLIBS_CMOCKA) -o Test
 
 .PHONY: run
 run : target
@@ -17,7 +17,7 @@ run : target
 
 .PHONY: test_mocka
 test_mocka : test
-	./test
+	./Test
 
 .PHONY: clean
 clean:
