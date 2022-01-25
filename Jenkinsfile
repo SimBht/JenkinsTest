@@ -5,6 +5,7 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Building..'
+                sh("make target")
             }
         }
         stage('Test') {
@@ -12,9 +13,9 @@ pipeline {
                 echo 'Testing..'
             }
         }
-        stage('Deploy') {
+        stage('Run') {
             steps {
-                echo 'Deploying....'
+                sh("./Target")
             }
         }
     }
