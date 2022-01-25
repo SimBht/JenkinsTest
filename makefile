@@ -3,7 +3,7 @@ CFLAGS  = -Wall -g
 LDFLAGS = -g
 LDLIBS_CMOCKA = -lcmocka
 
-all : target test
+all : target
 
 target:
 	gcc main.c -o Target
